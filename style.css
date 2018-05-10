@@ -40,17 +40,29 @@ h2,h3,h6{
 .corgo {
     position: relative;
     text-align: center;
+    display: inline-block;
     color: white;
 }
 .corgoText {
   position: absolute;
   color: #fff;
   text-align: center;
-  left: 0;
+  left: 50%;
   right: 0;
-  top: 30%;
+  top: 40%;
   letter-spacing: 3px;
+  transform: translate( -50%, -50% );
 }
+.name{
+  font-size: 5em;
+  color:white;
+}
+.name2{
+  font-size: 2em;
+  color:white;
+}
+
+
 .about{
     text-indent:2em;
     padding: 2em;
@@ -95,3 +107,28 @@ ul{
   padding-left: 1em;
   padding-right: 1em;
 }
+
+@media all and (max-width: 1200px) {
+    .name {
+        font-size: 5em;
+    }
+    .name2{
+      font-size: 2em;
+    }
+}
+@media all and (max-width: 1000px) {
+    .name {
+        font-size: 3em;
+        }
+        .name2{
+          font-size: 1em;
+        }
+    }
+@media all and (max-width: 500px) {
+    .name {
+        font-size: 2em;
+        }
+        .name2{
+          font-size: 0.5em;
+        }
+    }
